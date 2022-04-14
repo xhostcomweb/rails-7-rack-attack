@@ -1,7 +1,6 @@
-# README
+# rails 7 jumpstart mini
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Like the others but with a lot less stuff
 
 Things you may want to cover:
 
