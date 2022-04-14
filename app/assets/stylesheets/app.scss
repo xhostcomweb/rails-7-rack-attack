@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800,900&display=swap');
+
+
+/*
+ |=|=|=|=|=|=|=|
+  Generic Styling
+ |=|=|=|=|=|=|=|
+*/
+html, body{
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+/*
+ |=|=|=|=|=|=|=|
+  Custom Styling
+ |=|=|=|=|=|=|=|
+*/
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
