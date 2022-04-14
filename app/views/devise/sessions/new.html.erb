@@ -1,8 +1,8 @@
-<div class="container h-100">
+<div class="container h-100 mt-4 mb-4">
   <div class="row h-100 justify-content-center align-items-center">
     <div class="col-md-4">
 
-<h2>Log in</h2>
+<h2>Sign In</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field mb-3">
@@ -23,7 +23,7 @@
   <% end %>
 
   <div class="actions mb-3">
-    <%= f.submit "Log in", class: 'btn btn-sm btn-primary' %>
+    <%= f.submit "Sign In", class: 'btn btn-primary btn-rounded' %>
   </div>
 <% end %>
 
