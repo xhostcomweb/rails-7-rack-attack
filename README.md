@@ -1,4 +1,4 @@
-# rails 7 jumpstart mini
+# Rails 7 jumpstart mini
 
 Like the others but with a lot less stuff
 
