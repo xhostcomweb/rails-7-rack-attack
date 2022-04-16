@@ -3,11 +3,26 @@
     <div class="center">
       <h1 class="display-6">
         <span class="display-6--intro">Rails 7 Jumpstart Mini!</span></h1>
-      <i class="fa fa-bell fa-4x"></i>
       <p class="lead">
-        Built with latest Rails 7, PostgreSQL, Redis Caching, Bootstrap 5, Font Awesome 5, Devise Auth, and a bit more!</p>
+        Built with latest Ruby on Rails 7, PostgreSQL, Thin Webserver, Rack,
+        <br />Redis Caching, Bootstrap 5, Font Awesome 5, Devise Auth, Rubocop &amp; RSpec!</p>
       </p>
-      <p class="lead">But mostly non-opinionated!</p>
     </div>
   </div>
 </div>
+<section id="home" class="intro-section">
+  <div class="container">
+    <div class="row align-items-center text-dark">
+      <!-- START THE CONTENT FOR THE INTRO  -->
+      <div class="col-md-6 intros text-left">
+        <%= link_to image_tag('rack.webp', class: "img-fluid", alt: "Rack", :size => '550x289') %>
+      </div>
+
+      <div class="col-md-6 intros text-right">
+        <div class="container">
+          <%= link_to image_tag('ruby-rails.webp'), root_path, class: "img-fluid", alt: "Rails", :size => '550x289' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
