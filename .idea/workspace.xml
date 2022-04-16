@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fb09a34-a3ae-49c0-a5db-3281d0e231be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jumpstart-mini.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.rspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot_2022-04-16_07-27-08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/rack.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/ruby-rails.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220415205228_devise_create_users.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rubocop-performance.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rubocop-rails.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rubocop-rspec.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rubocop.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650085525733</updated>
       <workItem from="1650085533716" duration="1907000" />
-      <workItem from="1650087809860" duration="3103000" />
+      <workItem from="1650087809860" duration="3565000" />
     </task>
     <servers />
   </component>
