@@ -37,8 +37,6 @@ $ rspec
 
 # Examples
 
-$ rails action_text:install (already done here)
-
 $ rails generate administrate:install (if use default Administrate, for Admin example = in console: User.first.update :admin => true) )
 
 # Live reload/watch CSS
