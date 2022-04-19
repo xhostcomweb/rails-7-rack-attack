@@ -27,7 +27,13 @@ In .env file (cp example) put Postgres details and run above command.
 
 * How to run the test suite
 
-$ rspec
+rails g rspec:install
+
+rails db:test:prepare
+
+bundle binstubs rspec-core 
+
+rspec
 
 # Importmap Examples 
 
