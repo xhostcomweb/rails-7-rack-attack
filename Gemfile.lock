@@ -88,7 +88,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
-    childprocess (4.1.0)
+    cliver (0.3.2)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
     cssbundling-rails (1.1.0)
@@ -114,15 +114,14 @@ GEM
     digest (3.1.0)
     erubi (1.10.0)
     eventmachine (1.2.7)
-    factory_bot (6.2.1)
-      activesupport (>= 5.0.0)
-    factory_bot_rails (6.2.0)
-      factory_bot (~> 6.2.0)
-      railties (>= 5.0.0)
-    faker (2.20.0)
-      i18n (>= 1.8.11, < 2)
+    factory_girl (4.9.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.9.0)
+      factory_girl (~> 4.9.0)
+      railties (>= 3.0.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    headless (2.3.1)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
@@ -166,6 +165,10 @@ GEM
     parser (3.1.2.0)
       ast (~> 2.4.1)
     pg (1.3.5)
+    poltergeist (1.18.1)
+      capybara (>= 2.1, < 4)
+      cliver (~> 0.3.1)
+      websocket-driver (>= 0.2.0)
     public_suffix (4.0.7)
     racc (1.6.0)
     rack (2.2.3)
@@ -187,6 +190,10 @@ GEM
       activesupport (= 7.0.2.3)
       bundler (>= 1.15.0)
       railties (= 7.0.2.3)
+    rails-controller-testing (1.0.5)
+      actionpack (>= 5.0.1.rc1)
+      actionview (>= 5.0.1.rc1)
+      activesupport (>= 5.0.1.rc1)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -209,23 +216,23 @@ GEM
       actionpack (>= 5.0)
       railties (>= 5.0)
     rexml (3.2.5)
-    rspec-core (3.11.0)
-      rspec-support (~> 3.11.0)
-    rspec-expectations (3.11.0)
+    rspec-core (3.9.3)
+      rspec-support (~> 3.9.3)
+    rspec-expectations (3.9.4)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.11.0)
-    rspec-mocks (3.11.1)
+      rspec-support (~> 3.9.0)
+    rspec-mocks (3.9.1)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.11.0)
-    rspec-rails (5.1.1)
-      actionpack (>= 5.2)
-      activesupport (>= 5.2)
-      railties (>= 5.2)
-      rspec-core (~> 3.10)
-      rspec-expectations (~> 3.10)
-      rspec-mocks (~> 3.10)
-      rspec-support (~> 3.10)
-    rspec-support (3.11.0)
+      rspec-support (~> 3.9.0)
+    rspec-rails (3.9.1)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
+      rspec-support (~> 3.9.0)
+    rspec-support (3.9.4)
     rubocop (1.27.0)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
@@ -247,13 +254,6 @@ GEM
     rubocop-rspec (2.9.0)
       rubocop (~> 1.19)
     ruby-progressbar (1.11.0)
-    rubyzip (2.3.2)
-    selenium-webdriver (4.1.0)
-      childprocess (>= 0.5, < 5.0)
-      rexml (~> 3.2, >= 3.2.5)
-      rubyzip (>= 1.2.2)
-    shoulda-matchers (4.5.1)
-      activesupport (>= 4.2.0)
     sprockets (4.0.3)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -283,10 +283,6 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webdrivers (5.0.0)
-      nokogiri (~> 1.6)
-      rubyzip (>= 1.3.0)
-      selenium-webdriver (~> 4.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -306,28 +302,27 @@ DEPENDENCIES
   debug
   devise
   devise-bootstrap-views (~> 1.0)
-  factory_bot_rails
-  faker
+  factory_girl_rails
+  headless
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
+  poltergeist
   rack-contrib
   rails (~> 7.0.2, >= 7.0.2.3)
+  rails-controller-testing
   redis (~> 4.0)
-  rspec-rails (~> 5.0)
+  rspec-rails (~> 3.6)
   rubocop (~> 1.23)
   rubocop-performance (~> 1.11.0)
   rubocop-rails (~> 2.11.0)
   rubocop-rspec (~> 2.6)
-  selenium-webdriver
-  shoulda-matchers (~> 4.5, >= 4.5.1)
   sprockets-rails
   stimulus-rails
   thin
   turbo-rails
   tzinfo-data
   web-console
-  webdrivers
 
 RUBY VERSION
    ruby 3.1.0p0
