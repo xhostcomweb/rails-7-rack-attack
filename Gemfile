@@ -12,7 +12,7 @@ gem 'rails', '~> 7.0.2', '>= 7.0.2.3'
 gem 'sprockets-rails'
 
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+gem 'pg', '~> 1.3'
 
 # Rack contrib utilities [https://github.com/rack/rack-contrib
 gem 'rack-contrib'
@@ -24,6 +24,8 @@ gem 'devise-bootstrap-views', '~> 1.0'
 
 # Use the Thin web server [https://github.com/macournoyer/thin]
 gem 'thin'
+
+# Processes [https://github.com/mperham/sidekiq]
 gem 'sidekiq'
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
@@ -44,7 +46,9 @@ gem 'jbuilder'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
 
-
+# Service Objects  [https://www.rubydoc.info/gems/light-services/0.6.3] [https://www.rubydoc.info/gems/rails-patterns/0.11.0]
+# gem 'light-services', '~> 0.6.3'
+# gem 'rails-patterns'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
