@@ -1,12 +1,12 @@
 # jumpstart mini
 
-### Uses Thin server instead of Puma, and  Rack contrib extras.
+### Uses Thin server instead of Puma, and Rack contrib extras.
 
 $ bundle install
 
 $ yarn
 
-$ bundle exec thin start    or rails s
+$ bin/dev  to start dev server and other processes.
 
 * Ruby version
 

@@ -43,6 +43,8 @@ gem 'jbuilder'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
 
+gem 'sidekiq'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -62,26 +64,30 @@ gem 'bootsnap', require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
-  gem 'rubocop', '~> 1.23', require: false
+  gem 'rubocop', '~> 1.9', '>= 1.9.1', require: false
   gem 'rubocop-performance', '~> 1.11.0', require: false
   gem 'rubocop-rails', '~> 2.11.0', require: false
   gem 'rubocop-rspec', '~> 2.6', require: false
 end
 
 group :development do
-  # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem 'web-console'
+  gem 'foreman', '~> 0.87.2'
+  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
+  gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
+  gem 'listen', '~> 3.3'
+  gem 'pry-rails', '~> 0.3.9'
+  gem 'web-console', '>= 4.1.0'
 end
 
 group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-gem 'rspec-rails', '~> 3.6'
-gem 'factory_girl_rails'
-gem 'rails-controller-testing'
-gem 'headless'
-gem 'capybara'
-gem 'poltergeist'
-gem 'database_cleaner'
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '>= 3.26'
+  gem 'database_cleaner'
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails', '~> 4.0', '>= 4.0.2'
+  gem 'selenium-webdriver'
+  # Easy installation and use of web drivers to run system tests with browsers
+  gem 'webdrivers'
 end
+
