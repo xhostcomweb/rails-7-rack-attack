@@ -72,7 +72,11 @@ gem "sassc-rails"
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-  gem 'rubocop', '~> 1.9', '>= 1.9.1', require: false
+  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+  # gem 'byebug', '~> 9.0'
+  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'faker', '~> 2.19'
+  gem 'rubocop', '~> 1.23', require: false
   gem 'rubocop-performance', '~> 1.11.0', require: false
   gem 'rubocop-rails', '~> 2.11.0', require: false
   gem 'rubocop-rspec', '~> 2.6', require: false
