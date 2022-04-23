@@ -4,6 +4,7 @@
     <list default="true" id="5fb09a34-a3ae-49c0-a5db-3281d0e231be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/jumpstart-mini.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jumpstart-mini.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20220415205228_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220415205228_devise_create_users.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +156,7 @@
       <workItem from="1650087809860" duration="3565000" />
       <workItem from="1650520883194" duration="273000" />
       <workItem from="1650521177470" duration="57000" />
+      <workItem from="1650711633695" duration="152000" />
     </task>
     <servers />
   </component>
