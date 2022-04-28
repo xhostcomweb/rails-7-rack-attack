@@ -1,4 +1,4 @@
-# jumpstart mini
+# rack attack (jumpstart mini)
 
 ### Uses Thin server instead of Puma, and Rack contrib extras.
 
