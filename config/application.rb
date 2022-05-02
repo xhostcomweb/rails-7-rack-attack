@@ -10,15 +10,14 @@ Bundler.require(*Rails.groups)
 
 module RackAttack
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.0
-    config.generators.test_framework :rspec
-    # Configuration for the application, engines, and railties goes here.
-    #
-    # These settings can be overridden in specific environments using the files
-    # in config/environments, which are processed later.
-    #
-    # config.time_zone = "Central Time (US & Canada)"
+     # Initialize configuration defaults for originally generated Rails version.
+      config.load_defaults 7.0
+      config.generators do |g|
+      g.orm :active_record, primary_key_type: :uuid
+      g.test_framework :rspec, fixture: false
+      g.stylesheets false
+      g.helper false
+    end
     config.eager_load_paths << Rails.root.join("lib")
   end
 end

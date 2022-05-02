@@ -2,6 +2,9 @@
 
 ### Uses Thin server instead of Puma, and Rack contrib extras.
 
+##### User Model (Devise)
+username, roles (integer/enum) and UUID Primary key, and other subsequent models via generator.
+
 $ bundle install
 
 $ yarn
