@@ -19,7 +19,7 @@ gem 'rack-contrib'
 
 # Audit Bundle and Devise users.
 gem 'bundle-audit'
-gem 'devise'
+gem 'devise', git: 'https://github.com/heartcombo/devise', branch: 'main'
 gem 'devise-bootstrap-views', '~> 1.0'
 
 # Use the Thin web server [https://github.com/macournoyer/thin]
