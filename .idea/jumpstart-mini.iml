@@ -60,7 +60,7 @@
     <orderEntry type="library" scope="PROVIDED" name="database_cleaner-active_record (v2.0.1, rbenv: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="database_cleaner-core (v2.0.1, rbenv: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.5.0, rbenv: 3.1.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="devise (v4.8.1, rbenv: 3.1.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="devise (v4.8.1@f8d1ea, rbenv: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise-bootstrap-views (v1.1.0, rbenv: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.0, rbenv: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="digest (v3.1.0, rbenv: 3.1.0) [gem]" level="application" />

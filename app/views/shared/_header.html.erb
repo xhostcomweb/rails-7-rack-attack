@@ -10,6 +10,12 @@
       </ul>
 
       <ul class="navbar-nav">
+       <%= form_tag(new_user_session_path :method => "get",   
+     class: 'navbar-form navbar-left mx-2') do %>  
+     <div class="input-group">  
+     <%= text_field_tag :email, params[:email], placeholder: "Search Users By Email", class: "form-control" %>  
+     </div>  
+     <% end %>
 
         <div id="nav-account-dropdown" class="dropdown-menu dropdown-menu-end" aria-labelledby="navbar-dropdown">
           <%= link_to "Settings", edit_user_registration_path, class: "dropdown-item btn btn-default btn-sm" %>
