@@ -61,7 +61,7 @@ https://www.patreon.com/xhostcom
 
 ### Contributing ###
 
-Use Gitflow/Hubflow
+Use Gitflow/Hubflow but only the develop branch as the rest of it turns your brain to mush.
 
 [https://datasift.github.io/gitflow/GitFlowForGitHub.html]
 
