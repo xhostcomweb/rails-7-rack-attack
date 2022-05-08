@@ -1,7 +1,8 @@
 # rack attack (jumpstart mini)
 
 ### Uses Thin server instead of Puma, and Rack contrib extras.
-
+### For extra components/code snippets (Avatars, Masquerade etc), refer to Jumpstart Octo relavent folders/parts.
+[https://github.com/xhostcom/rails-7-saas-jumpstart-octo.git]
 ##### User Model (Devise)
 username, roles (integer/enum) and UUID Primary key, and other subsequent models via generator.
 
@@ -69,4 +70,8 @@ Use Gitflow/Hubflow
 3.Commit your changes (git commit -am 'Add awesome feature')
 4.Push to the branch (git push origin my-awesome-feature)
 5.Create a new Pull Request
+
+#### ToDo/fix
+
+Fix User sign up/sign in redirection/flash message
 
