@@ -55,16 +55,15 @@ class User < ApplicationRecord
   has_person_name
   # Notifications & Services
   has_many :notifications, as: :recipient
-  has_many :services
-  # has_many :members
-
-  private
+  has_many :services, dependent: :destroy
 
   # Example role set method
   def set_alt_role
     case role.to_sym
     when :member
       self.role = :member
+    else
+      self.role = :user
     end
   end
 end

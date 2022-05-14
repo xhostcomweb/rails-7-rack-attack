@@ -1,19 +1,17 @@
 # rails 7 rack attack
 
-[https://github.com/xhostcom/rails-7-saas-jumpstart-octo.git]
+[https://github.com/xhostcomweb/rails-7-rack-attack.git]
 
 Ruby On Rails 7 SaaS Jumpstart Dark Themed template with Ruby on Rails 7, PostgreSQL, Thin Webserver, UUID's, Rack Contrib,
 Email Sends, User Avatars, Enum Roles, Notifications, Announcements, Rollup, Importmap,
 CSS Bundling, JS Bundling, Administrate, Turbo, Stimulus JS, Hotwire, Action Cable, Cable Ready,
 Redis Caching, Bootstrap 5, Font Awesome 5, Devise Auth, Rubocop & RSpec!
 
-
 ## Roles - Devise User Model ##
 
 * Admin as boolean flag on User model (manual - switch it in console)
 * Member and other roles as enum integer (hash) on User model (write methods as required, default sign up set as user) No 3rd party gems needed for Roles.
 * Example: User.all.update :role => :owner, User.first.update :admin => true
-
 
 # JS & CSS Bundling with Rollup - no webpack/webpacker
 
