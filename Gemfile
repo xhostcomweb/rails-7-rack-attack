@@ -5,8 +5,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.0'
 
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 7.0.2', '>= 7.0.2.3'
+# Use specific branch of Rails
+gem 'rails', github: 'rails/rails', branch: '7-0-stable'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -14,44 +14,96 @@ gem 'sprockets-rails'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.3'
 
-# Rack contrib utilities [https://github.com/rack/rack-contrib
-gem 'rack-contrib'
-
-# Audit Bundle and Devise users.
+# Audit the Bundle  [https://www.rubydoc.info/gems/bundle-audit/0.1.0]  bundle audit --update bundle audit
 gem 'bundle-audit'
-gem 'devise', git: 'https://github.com/heartcombo/devise', branch: 'main'
-gem 'devise-bootstrap-views', '~> 1.0'
+
+# Rack contrib utilities & parser [https://rubygems.org/gems/rack-contrib] [https://rubygems.org/gems/rack-parser]
+gem 'rack-contrib'
+gem 'rack-parser'
+
+# Annotations in schema and routes [https://github.com/ctran/annotate_models]
+gem 'annotate'
 
 # Use the Thin web server [https://github.com/macournoyer/thin]
 gem 'thin'
 
-# Processes [https://github.com/mperham/sidekiq]
-gem 'sidekiq'
+# AMS [https://github.com/rails-api/active_model_serializers]
+# gem 'active_model_serializers'
 
-# Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
-gem 'jsbundling-rails'
+# Splitclient [https://help.split.io/hc/en-us] Optional
+# gem 'splitclient-rb'
+
+# View Components/Partials  [https://viewcomponent.org/]
+gem 'view_component'
+
+# Http & cookies [https://rubygems.org/gems/mechanize]
+gem 'mechanize'
+
+# Use JavaScript with ESM import maps, & bundling CSS [https://github.com/rails/importmap-rails]
+gem 'cssbundling-rails', '~> 1.0'
+gem 'importmap-rails'
+gem 'jsbundling-rails', '~> 1.0'
+gem 'requestjs-rails' # Always after importmap
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
 
+# Pagy Pagination [https://ddnexus.github.io/pagy/#gsc.tab=0]
+# gem 'pagy' 
+
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
+gem 'cable_ready'
+gem 'hotwire-rails'
 gem 'stimulus-rails'
 
-# Bundle and process CSS [https://github.com/rails/cssbundling-rails]
-gem 'cssbundling-rails'
+# Nominal basic CSS framework can be swapped out.
+gem 'bootstrap', '5.1.3'
+gem 'font-awesome-rails'
+
+# IDs
+gem 'friendly_id', '~> 5.4'
+
+# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
+gem 'image_processing', '~> 1.2'
+
+# Admin section
+gem 'administrate', github: 'excid3/administrate', branch: 'jumpstart'
+
+# Compress Full name
+gem 'name_of_person', '~> 1.1'
+
+# Notifications
+gem 'noticed', '~> 1.2'
+
+# Social Media Auth
+gem 'omniauth-facebook', '~> 8.0'
+gem 'omniauth-github', '~> 2.0'
+gem 'omniauth-twitter', '~> 1.4'
+
+# (Logins, Tokens, Auth Roles,(ie Author, Editor, Instructor, Curator etc, for Admin = in console: User.first.update :admin => true) [[https://www.rubydoc.info/gems/pundit_roles/0.6.0]
+gem 'devise', git: 'https://github.com/heartcombo/devise', branch: 'main'
+gem 'devise_masquerade', '~> 1.3'
+gem 'devise-bootstrap-views', '~> 1.0'
+gem 'pundit'
+
+# Processes
+gem 'sidekiq', '~> 6.2'
+
+# Sitemap
+gem 'sitemap_generator', '~> 6.1'
+gem 'whenever', require: false
+
+# Env variables
+gem 'dotenv-rails', '~> 2.7'
+
+# Favicon
+gem 'rails_real_favicon', '~> 0.1.1'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
-
-# Service Objects  [https://www.rubydoc.info/gems/light-services/0.6.3] [https://www.rubydoc.info/gems/rails-patterns/0.11.0]
-# gem 'light-services', '~> 0.6.3'
-# gem 'rails-patterns'
-
-# Pagination
-# gem 'pagy'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -66,16 +118,15 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'bootsnap', require: false
 
 # Use Sass to process CSS
-gem "sassc-rails"
-
-# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem 'sassc-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   # gem 'byebug', '~> 9.0'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails'
   gem 'faker', '~> 2.19'
+  gem 'rspec-rails', '~> 5.0'
   gem 'rubocop', '~> 1.23', require: false
   gem 'rubocop-performance', '~> 1.11.0', require: false
   gem 'rubocop-rails', '~> 2.11.0', require: false
@@ -83,23 +134,14 @@ group :development, :test do
 end
 
 group :development do
-  gem 'foreman', '~> 0.87.2'
-  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
-  gem 'listen', '~> 3.3'
-  gem 'pry-rails', '~> 0.3.9'
-  gem 'web-console', '>= 4.1.0'
+  # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem 'web-console'
 end
 
 group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 3.26'
-  gem 'database_cleaner'
-  gem 'factory_bot_rails'
-  gem 'rails-controller-testing'
-  gem 'rspec-rails', '~> 4.0', '>= 4.0.2'
+  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem 'capybara'
   gem 'selenium-webdriver'
-  # Easy installation and use of web drivers to run system tests with browsers
+  gem 'shoulda-matchers', '~> 5.1'
   gem 'webdrivers'
 end
-

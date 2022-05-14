@@ -1,43 +1,69 @@
-# rack attack (jumpstart mini)
+# rails 7 sass jumpstart octo 
 
-### Uses Thin server instead of Puma, and Rack contrib extras.
-### For extra components/code snippets (Avatars, Masquerade etc), refer to Jumpstart Octo relavent folders/parts.
 [https://github.com/xhostcom/rails-7-saas-jumpstart-octo.git]
-##### User Model (Devise)
-username, roles (integer/enum) and UUID Primary key, and other subsequent models via generator.
 
-$ bundle install
+Ruby On Rails 7 SaaS Jumpstart Dark Themed template with PostgreSQL, Redis Caching, Bootstrap 5, Font Awesome 5, Devise & Roles, Notifications, Announcements, Rollup, Importmap, CSS Bundling, JS Bundling, Administrate, Hotwire, Stimulus and Action Cable/Cable Ready & Request JS. (Strada coming soon) 
 
-$ yarn
+(For less opinionated slightly more bare bones version for quick MVP's, tests and projects, with UUIDs, User Roles, Rack Contrib, RSpec/Rubocop & Thin webserver,
+[https://github.com/xhostcomweb/rails-7-rack-attack.git])
 
-$ bin/dev  to start dev server and other processes.
+## Roles - Devise User Model ##
 
-* Ruby version
+* Admin as boolean flag on User model (manual - switch it in console)
+* Member and other roles as enum integer (hash) on User model (write methods as required, default sign up set as user) No 3rd party gems needed for Roles.
+* Example: User.all.update :role => :owner
 
-3.1.0  (Rails 7.0.23)
+# JS & CSS Bundling with Rollup - no webpack/webpacker
 
-* System dependencies
+* https://stimulus.hotwired.dev/
 
-Node 17.0.0
-Yarn 1.22.18
+* https://docs.stimulusreflex.com/
 
-* Database creation
+# Combine with Hotwire and Strada & others #
 
-rails db:migrate:reset
+* https://hotwired.dev/
 
-* Database initialization
+Style kept minimal so Bootstrap 5 can be swapped out for other CSS or UI if required, Bootstrap icons via CDN (swap/remove), dummy fonts in root of app (not used)
 
-In .env file (cp example) put Postgres details and run above command.
+* Ruby/Rails/Node/Postgres
 
-* How to run the test suite
+- [Ruby](https://www.ruby-lang.org/en/) 3.0.0 up
+- [Rails](https://rubyonrails.org/) 7.0.0 up
+- [NodeJS] (https://nodejs.org/es/blog/release/v16.0.0/) 16.0.0
+- [PostgreSQL](https://www.postgresql.org/docs/14/index.html) 14.00
 
-rails g rspec:install
+## SET UP ##
 
-rails db:test:prepare
+After first set email & db credentials in .env file (for PostgreSQL, cp .env.example to .env and fill in with your env details)
 
-bundle binstubs rspec-core 
+1. $ bundle install && bundle audit + (bundle audit --update)
+2. $ yarn  (engine node v 16.0.0)
+3. $ bin/rails css:install:bootstrap  (dont overwrite application.bootstrap)
 
-rspec
+* Hotwire
+
+4. $ rails hotwire:install  (dont overwrite, request js module declared in root .ts file )
+
+5. $ rails dev:cache (check/toggle, must be cached, if not run again) 
+
+6. Is set up to send basic user signup mail with Gmail, alter smtp or other mail credentials (.env, application_mailer, devise.rb & development.rb), then test signup confirmation emails by signing up & confirming user email
+As above be sure to copy .env.example > .env and enter details, or adapt to suit yours.  (2 factor auth Google accs req an App password for the device registered there and being used, not the normal password)
+
+7. $ bin/rails db:migrate:reset  (rails db:migrate:status, undo one, rails db:migrate:down VERSION=, undo all, db:migrate VERSION=0)
+
+## Optional
+
+8. $ rails stimulus_reflex:install (extra config needed see link [https://docs.stimulusreflex.com/])
+
+# Optional
+
+9. $ rails generate favicon (put your favicon.png in assets/images, along with favicon.json in config folder) [see https://realfavicongenerator.net]
+   
+10. $ rails g rspec:install  (for testing)
+
+(for test db run $ rails db:test:prepare)
+
+11. Run Importmap to set/pin Javascript  [https://github.com/rails/importmap-rails]
 
 # Importmap Examples 
 
@@ -45,7 +71,15 @@ rspec
  ./bin/importmap pin bootstrap  (pin bootstrap & popper, ie import & set)
  ./bin/importmap json (show maps)
 
+## Mandatory - Start server! ##
+
+$ bin/dev   (thin start just server)
+
+(For other cmds see  related docs/links)
+
 # Examples
+
+$ rails action_text:install (already done here)
 
 $ rails generate administrate:install (if use default Administrate, for Admin example = in console: User.first.update :admin => true) )
 
@@ -55,13 +89,13 @@ $ $ yarn build:css --watch (separate terminal watch/update changes in styles)
 
 ## Author
 
-Paul Anthony McGowan - info@xhostcom.com
+Paul Anthony McGowan - xhostcom@gmail.com
 
 https://www.patreon.com/xhostcom
 
 ### Contributing ###
 
-Use Gitflow/Hubflow but only the develop branch as the rest of it turns your brain to mush.
+Use Gitflow/Hubflow only develop branch
 
 [https://datasift.github.io/gitflow/GitFlowForGitHub.html]
 
@@ -70,8 +104,4 @@ Use Gitflow/Hubflow but only the develop branch as the rest of it turns your bra
 3.Commit your changes (git commit -am 'Add awesome feature')
 4.Push to the branch (git push origin my-awesome-feature)
 5.Create a new Pull Request
-
-#### ToDo/fix
-
-Fix User sign up/sign in redirection/flash message
 

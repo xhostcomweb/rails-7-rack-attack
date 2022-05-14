@@ -1,14 +1,22 @@
 # frozen_string_literal: true
 
-Rails.application.routes.draw do
-  devise_for :users
-  namespace :admin do
-    get 'dashboard/index'
-  end
-  root 'pages#index'
-  get 'pages/index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+require 'sidekiq/web'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+Rails.application.routes.draw do
+  namespace :admin do
+    resources :users
+    resources :services
+    resources :notifications
+    resources :announcements
+
+    root to: 'users#index'
+  end
+  resources :notifications, only: [:index]
+  resources :announcements, only: [:index]
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+  devise_scope :user do
+    get 'users' => 'devise/sessions#new'
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
+  root to: 'home#index'
 end

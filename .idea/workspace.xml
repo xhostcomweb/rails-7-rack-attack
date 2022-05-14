@@ -5,9 +5,165 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fb09a34-a3ae-49c0-a5db-3281d0e231be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/1_kJw2DD4pxXNFeOFwICn47A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/Small_Logo_Avatar_july2015_copy_9d_WithoutGB_W.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/Small_Logo_Avatar_july2015_copy_9d_WithoutGB_W.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/bell-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/checkmark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/danger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/favicon/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/favicon/android-chrome-256x256.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/favicon/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/favicon/browserconfig.xml.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/favicon/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/favicon/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/favicon/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/favicon/mstile-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/favicon/safari-pinned-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/favicon/site.webmanifest.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/info.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/intro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/logo-150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/logo-160.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/logo-180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/logo_large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/logo_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/logo_small_icon_only.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/logo_small_icon_only_inverted.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/logo_white_large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/rails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/rails.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/actiontext.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/shared/demo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/admin/announcements_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/admin/application_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/admin/notifications_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/admin/services_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/announcements_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/notifications_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/turbo_devise_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboards/announcement_dashboard.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboards/notification_dashboard.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboards/service_dashboard.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboards/user_dashboard.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/announcements_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/avatar_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/announcement.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/notification.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/service.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/policies/application_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/policies/user_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/application/_navigation.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/users/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/announcements/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/application/_favicon.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/home/privacy.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/home/terms.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/notifications/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/_head.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/nav-masquerade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/importmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/importmap.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/initializers/splitclient.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20210101185053_devise_create_users.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20211219170448_create_announcements.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20211219171100_create_notifications.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20211219171431_create_services.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20211219171905_create_friendly_id_slugs.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20211220185807_create_active_storage_tables.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20211221011534_create_action_text_tables.action_text.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/bootstrap-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/bootstrap-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/modules/callable.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/modules/use_cases/use_case.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tasks/auto_annotate_models.rake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails-tasks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screen-confirmation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screen-role-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenacc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenadmin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenannouncement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screendeps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screennotice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screensignout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/bootstrap-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/bootstrap-icons.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/bootstrap-icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/fonts/bootstrap-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/fonts/bootstrap-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z-schema.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jumpstart-mini.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jumpstart-mini.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/License.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/config/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/config/manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/rack.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/ruby-rails.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/signup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.bootstrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.bootstrap.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/dashboard_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/mailer/email_changed.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/mailer/email_changed.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/shared/_error_messages.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/shared/_error_messages.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pages/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_notices.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_notices.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bundle" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/dev" beforeDir="false" afterPath="$PROJECT_DIR$/bin/dev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cable.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/cable.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/credentials.yml.enc" beforeDir="false" afterPath="$PROJECT_DIR$/config/credentials.yml.enc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20220415205228_devise_create_users.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20220502113537_enable_uuid.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env.example" beforeDir="false" afterPath="$PROJECT_DIR$/env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +322,8 @@
       <workItem from="1651774204629" duration="75000" />
       <workItem from="1651774294720" duration="412000" />
       <workItem from="1651774733788" duration="82000" />
+      <workItem from="1651998971270" duration="650000" />
+      <workItem from="1652504532848" duration="330000" />
     </task>
     <servers />
   </component>

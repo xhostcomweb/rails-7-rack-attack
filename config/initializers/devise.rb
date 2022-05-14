@@ -5,26 +5,53 @@
 # are not: uncommented lines are intended to protect your configuration from
 # breaking changes in upgrades (i.e., in the event that future versions of
 # Devise change the default values for those options).
-#
+class TurboFailureApp < Devise::FailureApp
+  def respond
+    if request_format == :turbo_stream
+      redirect
+    else
+      super
+    end
+  end
+
+  def skip_format?
+    %w(html turbo_stream */*).include? request_format.to_s
+  end
+end
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-  # The secret key used by Devise. Devise uses this key to generate
+  # rubocop:todo Layout/LineLength
+  config.navigational_formats = ['/', :html, :turbo_stream] # The secret key used by Devise. Devise uses this key to generate
+  # rubocop:enable Layout/LineLength
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '33df2c87237ce4773484933cbd740b424242f6c479587cd5b188521de865b40045b434b64cb74c52d727579e9b53d85a1c026511585b8ca584d185df962d294e'
+  config.secret_key = Rails.application.credentials.secret_key_base
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
+  config.parent_controller = 'TurboDeviseController'
+
+  # ==> Navigation configuration
+
+  config.navigational_formats = ['*/*', :html, :turbo_stream]
+
+  # ==> Warden configuration
+
+  config.warden do |manager|
+    manager.failure_app = TurboFailureApp
+    #   manager.intercept_401 = false
+    #   manager.default_strategies(scope: :user).unshift :some_external_strategy
+  end
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'noreply@rackattack.com'
+  config.mailer_sender = 'noreply@rails7saas.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -126,7 +153,9 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '18c956e3b39511a4eacd017099a125c83f1a0ddb6f0aae496b51e09f3f4b4d75714db40b2779bdbd12c563dd9b466aca4f932719c61ab8e6adb177098b958f44'
+  # rubocop:todo Layout/LineLength
+  # config.pepper = 'cf480a7c31734639fbd8b61bc983484181886b12d9811f44e9356b300b12f2358e8e12db026f00794a4dec2d40ca60f164040f08fc86710b4e207657371337b1'
+  # rubocop:enable Layout/LineLength
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -272,6 +301,13 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
+
+  env_creds = Rails.application.credentials[Rails.env.to_sym] || {}
+  %i[facebook twitter github].each do |provider|
+    if options = env_creds[provider] # rubocop:todo Lint/AssignmentInCondition
+      config.omniauth provider, options[:app_id], options[:app_secret], options.fetch(:options, {})
+    end
+  end
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
