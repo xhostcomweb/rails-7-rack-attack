@@ -4,7 +4,7 @@
 #
 # Table name: announcements
 #
-#  id                :bigint(8)        not null, primary key
+#  id                :uuid             not null, primary key
 #  announcement_type :string
 #  description       :text
 #  name              :string

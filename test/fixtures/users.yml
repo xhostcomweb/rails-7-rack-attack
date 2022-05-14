@@ -2,7 +2,7 @@
 #
 # Table name: users
 #
-#  id                         :bigint(8)        not null, primary key
+#  id                         :uuid             not null, primary key
 #  admin                      :boolean          default(FALSE)
 #  announcements_last_read_at :datetime
 #  confirmation_sent_at       :datetime

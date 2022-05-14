@@ -4,7 +4,7 @@
 #
 # Table name: notifications
 #
-#  id             :bigint(8)        not null, primary key
+#  id             :uuid             not null, primary key
 #  params         :json
 #  read_at        :datetime
 #  recipient_type :string           not null
