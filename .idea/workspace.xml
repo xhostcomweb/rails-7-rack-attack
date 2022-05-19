@@ -4,43 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fb09a34-a3ae-49c0-a5db-3281d0e231be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 04-51-54.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 04-53-03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 04-53-16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 04-53-53.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 04-54-35.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-20-28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-21-08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-23-05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-24-33.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-27-47.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-28-18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-33-25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-33-59.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220519042946_add_user_to_services.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/middleware/rack_attack.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jumpstart-mini.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jumpstart-mini.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/announcement.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/announcement.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/service.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/workers/example_worker.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/workers/example_worker.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/importmap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/importmap.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20200102113537_enable_uuid.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200102113537_enable_uuid.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20210101185053_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20210101185053_devise_create_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20211219171431_create_services.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20211219171431_create_services.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-    </list>
+    <list default="true" id="5fb09a34-a3ae-49c0-a5db-3281d0e231be" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,7 +166,7 @@
       <workItem from="1651998971270" duration="650000" />
       <workItem from="1652504532848" duration="330000" />
       <workItem from="1652513712060" duration="368000" />
-      <workItem from="1652931571296" duration="3694000" />
+      <workItem from="1652931571296" duration="4326000" />
     </task>
     <servers />
   </component>

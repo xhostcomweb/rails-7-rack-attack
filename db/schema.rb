@@ -85,7 +85,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_19_042946) do
     t.text "auth"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id"
+    t.uuid "user_id", null: false
     t.index ["user_id"], name: "index_services_on_user_id"
   end
 
@@ -118,4 +118,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_19_042946) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "services", "users"
 end
