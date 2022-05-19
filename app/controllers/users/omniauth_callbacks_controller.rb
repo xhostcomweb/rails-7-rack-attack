@@ -39,7 +39,7 @@ module Users
         redirect_to edit_user_registration_path
       else
         sign_in_and_redirect user, event: :authentication
-        set_flash_message :notice, :success, kind: kind
+        set_flash_message :notice, :success, kind:
       end
     end
     # rubocop:enable Metrics/MethodLength
@@ -74,7 +74,7 @@ module Users
       {
         provider: auth.provider,
         uid: auth.uid,
-        expires_at: expires_at,
+        expires_at:,
         access_token: auth.credentials.token,
         access_token_secret: auth.credentials.secret
       }

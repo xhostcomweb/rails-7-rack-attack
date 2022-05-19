@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'sidekiq/web'
+require 'middleware/rack_attack'
 
 Rails.application.routes.draw do
   namespace :admin do

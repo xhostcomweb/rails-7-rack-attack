@@ -34,6 +34,8 @@ Style kept minimal so Bootstrap 5 can be swapped out for other CSS or UI if requ
 
 ## SET UP ##
 
+(Todo: fix admin new user)
+
 After first set email & db credentials in .env file (for PostgreSQL, cp .env.example to .env and fill in with your env details)
 
 1. $ bundle install && bundle audit + (bundle audit --update)

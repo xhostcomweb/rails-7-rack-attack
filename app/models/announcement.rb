@@ -12,7 +12,7 @@
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #
-class Announcement < ApplicationRecord # rubocop:todo Style/Documentation
+class Announcement < ApplicationRecord
   TYPES = %w[new fix update].freeze
 
   after_initialize :set_defaults

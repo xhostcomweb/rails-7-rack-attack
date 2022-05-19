@@ -5,10 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fb09a34-a3ae-49c0-a5db-3281d0e231be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 04-51-54.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 04-53-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 04-53-16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 04-53-53.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 04-54-35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-20-28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-21-08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-23-05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-24-33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-27-47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-28-18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-33-25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshot from 2022-05-19 05-33-59.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220519042946_add_user_to_services.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/middleware/rack_attack.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jumpstart-mini.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jumpstart-mini.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/announcement.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/announcement.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/service.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/workers/example_worker.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/workers/example_worker.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/importmap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/importmap.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20200102113537_enable_uuid.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200102113537_enable_uuid.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20210101185053_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20210101185053_devise_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20211219171431_create_services.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20211219171431_create_services.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,21 +60,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.33&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/anton/node_modules/yarn/bin/yarn&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.15.0",
+    "javascript.nodejs.core.library.typings.version": "16.11.36",
+    "last_opened_file_path": "/home/anton/node_modules/yarn/bin/yarn",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Rails.Development: jumpstart-mini">
     <configuration name="Development: jumpstart-mini" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="jumpstart-mini" />
@@ -170,6 +202,7 @@
       <workItem from="1651998971270" duration="650000" />
       <workItem from="1652504532848" duration="330000" />
       <workItem from="1652513712060" duration="368000" />
+      <workItem from="1652931571296" duration="3694000" />
     </task>
     <servers />
   </component>

@@ -14,12 +14,17 @@
 #  uid                 :string
 #  created_at          :datetime         not null
 #  updated_at          :datetime         not null
+#  user_id             :bigint(8)
 #
-class Service < ApplicationRecord # rubocop:todo Style/Documentation
+# Indexes
+#
+#  index_services_on_user_id  (user_id)
+#
+class Service < ApplicationRecord
   belongs_to :user
 
   Devise.omniauth_configs.each_key do |provider|
-    scope provider, -> { where(provider: provider) }
+    scope provider, -> { where(provider:) }
   end
 
   def client

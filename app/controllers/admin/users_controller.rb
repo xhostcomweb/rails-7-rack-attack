@@ -2,6 +2,9 @@
 
 module Admin
   class UsersController < Admin::ApplicationController
+    def new
+      @user = User.new
+    end
     # Overwrite any of the RESTful controller actions to implement custom behavior
     # For example, you may want to send an email after a foo is updated.
     #
@@ -36,11 +39,11 @@ module Admin
     # empty values into nil values. It uses other APIs such as `resource_class`
     # and `dashboard`:
     #
-    # def resource_params
-    #   params.require(resource_class.model_name.param_key).
-    #     permit(dashboard.permitted_attributes).
-    #     transform_values { |value| value == "" ? nil : value }
-    # end
+    def resource_params
+      params.require(resource_class.model_name.param_key).
+        permit(dashboard.permitted_attributes).
+        transform_values { |value| value == '' ? nil : value }
+    end
 
     # See https://administrate-prototype.herokuapp.com/customizing_controller_actions
     # for more information

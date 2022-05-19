@@ -59,11 +59,11 @@ class User < ApplicationRecord
 
   # Example role set method
   def set_alt_role
-    case role.to_sym
-    when :member
-      self.role = :member
-    else
-      self.role = :user
-    end
+    self.role = case role.to_sym
+                when :member
+                  :member
+                else
+                  :user
+                end
   end
 end

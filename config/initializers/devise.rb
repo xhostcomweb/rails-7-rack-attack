@@ -15,7 +15,7 @@ class TurboFailureApp < Devise::FailureApp
   end
 
   def skip_format?
-    %w(html turbo_stream */*).include? request_format.to_s
+    %w[html turbo_stream */*].include? request_format.to_s
   end
 end
 # Use this hook to configure devise mailer, warden hooks and so forth.
