@@ -2,7 +2,7 @@
 
 [https://github.com/xhostcomweb/rails-7-rack-attack.git]
 
-Ruby On Rails 7 SaaS Jumpstart Dark Themed template with Ruby on Rails 7, PostgreSQL, Thin Webserver, UUID's, Rack Contrib,
+Ruby On Rails 7 SaaS Jumpstart Dark Themed template with Ruby on Rails 7, PostgreSQL, Puma Webserver, UUID's, Rack Contrib,
 Email Sends, User Avatars, Enum Roles, Notifications, Announcements, Rollup, Importmap,
 CSS Bundling, JS Bundling, Administrate, Turbo, Stimulus JS, Hotwire, Action Cable, Cable Ready,
 Redis Caching, Bootstrap 5, Font Awesome 5, Devise Auth, Rubocop & RSpec!
@@ -40,32 +40,32 @@ After first set email & db credentials in .env file (for PostgreSQL, cp .env.exa
 
 1. $ bundle install && bundle audit + (bundle audit --update)
 2. $ yarn  (engine node v 16.0.0)
-3. $ bin/rails css:install:bootstrap  (dont overwrite application.bootstrap)
+
 
 * Hotwire
 
-4. $ rails hotwire:install  (dont overwrite, request js module declared in root .ts file )
+3. $ rails hotwire:install  (dont overwrite, request js module declared in root .ts file )
 
-5. $ rails dev:cache (check/toggle, must be cached, if not run again) 
+4. $ rails dev:cache (check/toggle, must be cached, if not run again) 
 
-6. Is set up to send basic user signup mail with Gmail, alter smtp or other mail credentials (.env, application_mailer, devise.rb & development.rb), then test signup confirmation emails by signing up & confirming user email
+5. Is set up to send basic user signup mail with Gmail, alter smtp or other mail credentials (.env, application_mailer, devise.rb & development.rb), then test signup confirmation emails by signing up & confirming user email
 As above be sure to copy .env.example > .env and enter details, or adapt to suit yours.  (2 factor auth Google accs req an App password for the device registered there and being used, not the normal password)
 
-7. $ bin/rails db:migrate:reset  (rails db:migrate:status, undo one, rails db:migrate:down VERSION=, undo all, db:migrate VERSION=0)
+6. $ bin/rails db:migrate:reset  (rails db:migrate:status, undo one, rails db:migrate:down VERSION=, undo all, db:migrate VERSION=0) or $  bin/setup
 
 ## Optional
 
-8. $ rails stimulus_reflex:install (extra config needed see link [https://docs.stimulusreflex.com/])
+7. $ rails stimulus_reflex:install (extra config needed see link [https://docs.stimulusreflex.com/])
 
 # Optional
 
-9. $ rails generate favicon (put your favicon.png in assets/images, along with favicon.json in config folder) [see https://realfavicongenerator.net]
+8. $ rails generate favicon (put your favicon.png in assets/images, along with favicon.json in config folder) [see https://realfavicongenerator.net]
    
-10. $ rails g rspec:install  (for testing)
+9. $ rails g rspec:install  (for testing)
 
 (for test db run $ rails db:test:prepare)
 
-11. Run Importmap to set/pin Javascript  [https://github.com/rails/importmap-rails]
+10. Run Importmap to set/pin Javascript  [https://github.com/rails/importmap-rails]
 
 # Importmap Examples 
 
@@ -75,7 +75,7 @@ As above be sure to copy .env.example > .env and enter details, or adapt to suit
 
 ## Mandatory - Start server! ##
 
-$ bin/dev   (thin start just server)
+$ bin/dev   ($ thin start - just server)
 
 (For other cmds see  related docs/links)
 
@@ -104,6 +104,6 @@ Use Gitflow/Hubflow only develop branch
 1.Clone it
 2.Create your feature branch (git checkout -b my-new-feature)
 3.Commit your changes (git commit -am 'Add awesome feature')
-4.Push to the branch (git push origin my-awesome-feature)
+4.Push to the branch (git push origin my-awesome-earth-shattering-feature)
 5.Create a new Pull Request
 

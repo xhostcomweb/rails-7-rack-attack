@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RackAttack
+module Rack::Attack
   class Middleware
     def initialize(app)
       @app = app

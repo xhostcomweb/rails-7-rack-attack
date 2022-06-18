@@ -24,8 +24,8 @@ gem 'rack-parser'
 # Annotations in schema and routes [https://github.com/ctran/annotate_models]
 gem 'annotate'
 
-# Use the Thin web server [https://github.com/macournoyer/thin]
-gem 'thin'
+# Use the Puma web server
+gem 'puma'
 
 # AMS [https://github.com/rails-api/active_model_serializers]
 # gem 'active_model_serializers'
